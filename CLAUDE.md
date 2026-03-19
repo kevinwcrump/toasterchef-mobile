@@ -21,6 +21,31 @@ Meshy.ai → export FBX or GLB → import Unity → apply Humanoid avatar → Mi
 - Isometric (45°): neighborhood reveal, cinematic moments
 - All orthographic — no perspective distortion
 
+## Unity Project Structure
+```
+Toaster Chef/
+├── Assets/
+│   ├── Scenes/          ← Unity default, use this (not _Scenes)
+│   ├── Characters/
+│   │   ├── Pilots/
+│   │   ├── NPCs/
+│   │   └── Staff/
+│   ├── Trikes/
+│   ├── Environment/
+│   │   ├── Props/
+│   │   └── Neighborhoods/
+│   ├── KitchenGarage/
+│   ├── Scripts/
+│   │   ├── Gameplay/
+│   │   ├── NPCSimulation/
+│   │   ├── MapGeneration/
+│   │   ├── Network/
+│   │   └── UI/
+│   └── UI/
+├── Packages/
+└── ProjectSettings/
+```
+
 ## Reference
 - Original web POC (Phaser 3 + Colyseus): https://github.com/kevinwcrump/toasterchef
 - Full game design doc in memory: /Users/kevincrump/.claude/projects/-Users-kevincrump-source/memory/project_toaster_chef.md
